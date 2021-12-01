@@ -13,10 +13,6 @@ gemfile(true) do
   gem 'webrick'
 end
 
-use Rack::Static,
-  :urls => ["/images", "/js", "/css"],
-  :root => "public"
-
 options = {
   Host: '0.0.0.0', # Important : Binding on all interface
   Port: '8080'
